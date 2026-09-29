@@ -1,0 +1,11 @@
+{
+  "name": "joshua-hernandez-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A dark, amber-accented portfolio design for Joshua Hernandez.",
+  "scripts": {
+    "dev": "node server.cjs",
+    "start": "node server.cjs",
+    "check": "node --check script.js && node --check server.cjs"
+  }
+}
