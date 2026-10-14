@@ -1,18 +1,18 @@
-# Joshua Hernandez — Portfolio
+# TechAble — Company Portfolio
 
-A responsive, dark portfolio with amber accents, inspired by the supplied reference. Built with HTML, CSS, and vanilla JavaScript; no package installation or build step required.
+A responsive company portfolio for TechAble, with a dark background, amber accents, the supplied blue-and-white logo, and an abstract AI hero illustration. Built with HTML, CSS, and vanilla JavaScript; no package installation or build step required.
 
 Open `index.html` directly, or run `npm run dev` and visit http://localhost:3000. An alternative is `python -m http.server 3000 --bind 127.0.0.1`.
 
-## This first pass
+## Features
 
 - Responsive navigation and section highlighting.
 - Service links that lead to the contact section.
 - Filterable project showcases with accessible native detail dialogs.
-- Direct contact section in place of the inquiry form. Per the owner's request to choose initial details, `joshua@example.com` and `+1 (202) 555-0147` are clearly marked samples with mailto: and tel: links. Replace these with real contact details before publishing.
+- Direct contact section with sample email and phone links, clearly marked for replacement with real company contact details.
 - Keyboard focus styles, skip navigation, and reduced-motion support.
 
-The title, biography, and core technologies use Joshua’s supplied professional profile. Services and supporting copy reflect that profile. Availability and portrait remain design-stage content to confirm or replace before publication. No client testimonials or experience metrics are invented. The hero portrait is a fictional AI-generated stand-in, not Joshua's likeness. Replace `assets/portrait.png` with your own photo and update its alt text in `index.html`.
+The title, company introduction, services, calls to action, and footer use TechAble branding. The logo is loaded directly from the supplied assets. No client testimonials or experience metrics are invented. Contact details remain explicitly labeled samples: `techable@example.com` and `+1 (202) 555-0147`.
 
 Global colors, typography, spacing, and breakpoints live in `styles.css`. Page content is in `index.html`; project dialog copy is in `script.js`. Google Fonts is the only external request; system font fallbacks work offline. All imagery and project previews are local.
 
@@ -50,11 +50,11 @@ The Web category includes the [Miu Miu Vinyl Club footwear collection](https://w
 
 `assets/miumiu-website.jpg` shows the storefront navigation, product grid, filters, and prices. No personal contribution or implementation framework is inferred.
 
-## Hero image provenance
+## AI hero image provenance
 
 
-Generated with the built-in imagegen tool; saved at `assets/portrait.png`.
+Generated with the built-in imagegen tool; saved at `assets/ai-core.png`. The previous portrait is retained as an unused asset. The header, company section, and footer use `assets/Techable-Logo-Horizontal-Colorless-Dark.png`, and the favicon uses `assets/TechAble-Logo-Icon-Coloress.png`.
 
 Final prompt:
 
-> Use case: photorealistic-natural. Asset type: temporary fictional developer portrait for a dark premium portfolio website. Create a high-end editorial studio photograph of a fictional male software developer in his late twenties, medium tan skin, dark wavy hair, short neat beard, round dark eyeglasses, plain black crew-neck t-shirt. Waist-up portrait, arms casually crossed, looking into camera with warm confident expression. Subject centered, entire head and arms visible, generous margin above head. Background seamless solid nearly black charcoal #101214. Soft neutral key light with subtle warm amber rim lighting along right shoulder. Natural skin texture, realistic anatomy, understated sophisticated photography. Vertical 4:5 composition. No text, no graphics, no rings, no logo, no watermark. This is a fictional placeholder person, not an actual portfolio owner's likeness.
+> Use case: stylized-concept. Asset type: hero illustration for TechAble, an AI and software development company portfolio. Primary request: a polished abstract artificial intelligence illustration to replace a human portrait. Subject: a luminous neural intelligence core formed from elegant interwoven glass filaments and small connected nodes, suspended above a compact layered graphite computing platform, subtle orbital arcs and fine circuit connections around it. Style: premium 3D editorial technology illustration, sculptural and precise, restrained detail. Composition: square image, centered entire sculpture with generous dark negative space around all sides, no cropped elements, suitable for the right half of a website hero. Backdrop: seamless nearly black charcoal #0c0e10, edges fading into this color. Lighting: warm amber and gold core with a few restrained electric blue and cyan highlights echoing a blue company logo. Materials: smoked glass, graphite metal, luminous filaments. Constraints: no people, no faces, no humanoid robots, no text, no logos, no watermarks, no UI panels. Sophisticated, clear silhouette, suitable for a business audience.

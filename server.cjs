@@ -5,6 +5,7 @@ const root = __dirname;
 const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg' };
 const allowedFiles = new Set(['/index.html', '/styles.css', '/script.js', '/assets/favicon.svg', '/assets/portrait.png', '/assets/renew360-icon.jpg', '/assets/renew360-screen.jpg', '/assets/renew360-dashboard.jpg', '/assets/gigsters-icon.jpg', '/assets/gigsters-screen.jpg', '/assets/gigsters-jobs.jpg', '/assets/menbili-icon.jpg', '/assets/menbili-community.jpg']);
 const portFlag = process.argv.indexOf('--port');
+['/assets/ai-core.png', '/assets/Techable-Logo-Horizontal-Colorless-Dark.png', '/assets/TechAble-Logo-Icon-Coloress.png'].forEach(file => allowedFiles.add(file));
 ['/assets/rolla-icon.jpg', '/assets/rolla-map.jpg', '/assets/rolla-share.jpg', '/assets/luckyorange-website.jpg', '/assets/miumiu-website.jpg'].forEach(file => allowedFiles.add(file));
 const port = Number(process.env.PORT || (portFlag >= 0 && process.argv[portFlag + 1]) || 3000);
 http.createServer((req, res) => {

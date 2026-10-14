@@ -1,8 +1,8 @@
 {
-  "name": "joshua-hernandez-portfolio",
+  "name": "techable-portfolio",
   "version": "1.0.0",
   "private": true,
-  "description": "A dark, amber-accented portfolio design for Joshua Hernandez.",
+  "description": "TechAble company portfolio for AI and software development.",
   "scripts": {
     "dev": "node server.cjs",
     "start": "node server.cjs",
