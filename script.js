@@ -283,3 +283,41 @@ dialog.addEventListener('click', event => {
   if (event.target === dialog && (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom)) dialog.close();
 });
 document.querySelector('#year').textContent = new Date().getFullYear();
+
+const inquiryForm = document.querySelector('#project-inquiry');
+function buildProjectInquiryUrl(form) {
+  const fields = new FormData(form);
+  const value = key => String(fields.get(key) || '').trim();
+  const subject = `TechAble project inquiry: ${value('projectType')}`;
+  const body = [
+    'Hello TechAble,',
+    '',
+    'I would like to discuss a project.',
+    '',
+    `Name: ${value('name')}`,
+    `Email: ${value('email')}`,
+    `Project type: ${value('projectType')}`,
+    `Budget: ${value('budget') || 'Not specified'}`,
+    '',
+    'Project description:',
+    value('description')
+  ].join('\r\n');
+  return `mailto:techableteam@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
+
+if (inquiryForm) {
+  const status = document.querySelector('#inquiry-status');
+  inquiryForm.addEventListener('input', event => {
+    if (typeof event.target.setCustomValidity === 'function') event.target.setCustomValidity('');
+    status.textContent = '';
+  });
+  inquiryForm.addEventListener('submit', event => {
+    event.preventDefault();
+    for (const field of inquiryForm.querySelectorAll('input[required], textarea[required]')) {
+      field.setCustomValidity(field.value.trim() ? '' : 'Please complete this field.');
+    }
+    if (!inquiryForm.reportValidity()) return;
+    window.location.href = buildProjectInquiryUrl(inquiryForm);
+    status.textContent = 'Your email app has been requested. Review the draft and send it to complete your inquiry. If it does not open, email techableteam@gmail.com directly; your details remain in the form.';
+  });
+}

@@ -10,6 +10,8 @@ Open `index.html` directly, or run `npm run dev` and visit http://localhost:3000
 - Service links that lead to the contact section.
 - Filterable project showcases with accessible native detail dialogs.
 - Direct contact section with clickable company email and phone links.
+- "Why Work With TechAble?" section covering business-first engineering, end-to-end development, practical AI integration, and ongoing collaboration and support.
+- Project inquiry form with required name, email, project type, and project description, plus optional budget. It validates the fields and prepares an email draft addressed to `techableteam@gmail.com`; the visitor reviews and sends the draft in their email app. There is no automatic email delivery or server-side submission storage.
 - Keyboard focus styles, skip navigation, and reduced-motion support.
 
 The title, company introduction, services, calls to action, and footer use TechAble branding. The logo is loaded directly from the supplied assets. No client testimonials or experience metrics are invented. Company contact details: `techableteam@gmail.com` and `+1 431 458 8530`.
