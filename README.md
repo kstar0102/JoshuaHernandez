@@ -9,10 +9,10 @@ Open `index.html` directly, or run `npm run dev` and visit http://localhost:3000
 - Responsive navigation and section highlighting.
 - Service links that lead to the contact section.
 - Filterable project showcases with accessible native detail dialogs.
-- Direct contact section with sample email and phone links, clearly marked for replacement with real company contact details.
+- Direct contact section with clickable company email and phone links.
 - Keyboard focus styles, skip navigation, and reduced-motion support.
 
-The title, company introduction, services, calls to action, and footer use TechAble branding. The logo is loaded directly from the supplied assets. No client testimonials or experience metrics are invented. Contact details remain explicitly labeled samples: `techable@example.com` and `+1 (202) 555-0147`.
+The title, company introduction, services, calls to action, and footer use TechAble branding. The logo is loaded directly from the supplied assets. No client testimonials or experience metrics are invented. Company contact details: `techableteam@gmail.com` and `+1 431 335 8256`.
 
 Global colors, typography, spacing, and breakpoints live in `styles.css`. Page content is in `index.html`; project dialog copy is in `script.js`. Google Fonts is the only external request; system font fallbacks work offline. All imagery and project previews are local.
 
