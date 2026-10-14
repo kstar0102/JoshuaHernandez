@@ -716,7 +716,7 @@ dialog > p:not(.eyebrow), #dialog-extra { font-size: 18px; }
   .projects-section .project-info h3 { font-size: 20px; }
 }
 
-/* TechAble company identity and AI illustration. */
+/* TechAble company identity and hero layout. */
 .brand-logo { width: 225px; height: 75px; object-fit: contain; }
 .company-brand { margin-top: 22px; }
 .company-brand img { width: 250px; height: auto; }
@@ -756,4 +756,15 @@ dialog > p:not(.eyebrow), #dialog-extra { font-size: 18px; }
   .brand-logo { width: 132px; height: 44px; }
   .header-cta { margin-right: 12px; }
   #home h1 { font-size: 32px; }
+}
+
+/* Transparent professional portrait supplied by the owner. */
+#home .hero-art--portrait { min-height: 620px; }
+#home .hero-art--portrait::before { inset: 5% 0 0; background: radial-gradient(ellipse at 50% 50%, #e8a54d12, transparent 65%); }
+#home .hero-art--portrait img { position: absolute; z-index: 1; left: 0; bottom: 0; width: 100%; height: 100%; max-width: none; object-fit: contain; object-position: center bottom; mix-blend-mode: normal; opacity: 1; mask-image: linear-gradient(to bottom, black 0%, black 78%, transparent 100%); }
+@media (min-width: 761px) and (max-width: 1100px) {
+  #home .hero-art--portrait { min-height: 560px; }
+}
+@media (max-width: 760px) {
+  #home .hero-art--portrait { min-height: 0; aspect-ratio: 4 / 5; max-width: 440px; margin: 24px auto 0; }
 }
